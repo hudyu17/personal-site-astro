@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://noahflk.com/sitemap-index.xml
+Sitemap: https://hudsonyuen.com/sitemap-index.xml

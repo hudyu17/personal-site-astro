@@ -1,6 +1,6 @@
-## noahflk.com
+## hudsonyuen.com
 
-This is the repository for my personal website and blog https://noahflk.com built on top of Astro and Tailwind CSS.
+This is the repository for my personal website and blog https://hudsonyuen.com built on top of Astro and Tailwind CSS.
 
 ## Running Locally
 
@@ -20,4 +20,4 @@ npm run dev
 
 ## License
 
-`noahflk.com` is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
+`hudsonyuen.com` is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
