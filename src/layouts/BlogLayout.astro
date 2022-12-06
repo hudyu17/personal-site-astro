@@ -1,0 +1,23 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Newsletter from '@/components/Newsletter.astro';
+
+import { parseISO, format } from 'date-fns';
+
+const { frontmatter } = Astro.props;
+const date = parseISO(frontmatter.pubDate);
+const formattedDate = format(date, 'LLLL d, yyyy');
+---
+
+<Layout title={frontmatter.title} description={frontmatter.summary}>
+  <div>
+    <article class="prose lg:prose-lg dark:prose-invert">
+      <h1>{frontmatter.title}</h1>
+      <p>Published on {formattedDate}</p>
+      <slot />
+    </article>
+    <div class="pt-12 pb-8">
+      <Newsletter />
+    </div>
+  </div>
+</Layout>

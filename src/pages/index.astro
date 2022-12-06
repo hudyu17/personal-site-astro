@@ -1,0 +1,85 @@
+---
+import BlogPostPreview from '@/components/BlogPostPreview.astro';
+import Email from '@/components/icons/Email.astro';
+import GitHub from '@/components/icons/GitHub.astro';
+import Twitter from '@/components/icons/Twitter.astro';
+import Linkedin from '@/components/icons/Linkedin.astro';
+import { EMAIL, HANDLE_GITHUB, HANDLE_TWITTER, HANDLE_LINKEDIN } from '@/constants';
+import Layout from '@/layouts/Layout.astro';
+
+const allPosts = await Astro.glob('./blog/*/index.mdx');
+const sortedRecentPosts = allPosts
+  .sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf())
+  .slice(0, 3);
+---
+
+<Layout>
+  <div class="space-y-6">
+    <h1 class="text-3xl font-bold md:text-5xl">Hi, I'm Hudson 👋</h1>
+    <h2 class="text-lg">I make things for fun 🛫</h2>
+    <ul class="list-disc space-y-2 ml-4">
+        <li><a
+          class="hover:underline rounded-lg dark:hover:underline text-indigo-800 dark:text-yellow-200"
+          href="https://www.nextcanada.com/next-36/"
+          target="_blank"
+        >Next36</a> 2022 Cohort</li>
+        <li>Started <a
+            class="hover:underline rounded-lg dark:hover:underline text-indigo-800 dark:text-yellow-200"
+            href="https://theflyingmoose.net/"
+            target="_blank"
+          >
+            The Flying Moose
+          </a>
+        </li>
+        <li>Consulting Intern at <a
+          class="hover:underline rounded-lg dark:hover:underline text-indigo-800 dark:text-yellow-200"
+          href="https://www.arup.com/"
+          target="_blank"
+        >Arup</a>, <a
+        class="hover:underline rounded-lg dark:hover:underline text-indigo-800 dark:text-yellow-200"
+        href="https://www.mastercardservices.com/en/solutions/payments/mastercard-advisors-consulting"
+        target="_blank"
+      >Mastercard
+      </a></li>
+      <li>
+        Computer Science and Statistics, UofT (2022)
+      </li>
+      </ul>
+    <div class="flex space-x-3">
+      <a
+        class="hover:bg-yellow-200 py-2 px-3 rounded-lg dark:hover:bg-neutral-800 dark:hover:text-yellow-200"
+        href={`https://linkedin.com/in/${HANDLE_LINKEDIN}`}
+        target="_blank"
+      >
+        <Linkedin />
+      </a>
+      <a
+        class="hover:bg-yellow-200 py-2 px-3 rounded-lg dark:hover:bg-neutral-800 dark:hover:text-yellow-200"
+        href={`https://github.com/${HANDLE_GITHUB}`}
+        target="_blank"
+      >
+        <GitHub />
+      </a>
+      <a
+        class="hover:bg-yellow-200 py-2 px-3 rounded-lg dark:hover:bg-neutral-800 dark:hover:text-yellow-200"
+        href={`https://twitter.com/${HANDLE_TWITTER}`}
+        target="_blank"
+      >
+        <Twitter />
+      </a>
+      <a
+        class="hover:bg-yellow-200 py-2 px-3 rounded-lg dark:hover:bg-neutral-800 dark:hover:text-yellow-200"
+        href={`mailto:${EMAIL}`}
+        target="_blank"
+      >
+        <Email />
+      </a>
+    </div>
+    <!-- <Newsletter /> -->
+    <div class="py-6">
+      <h3 class="text-4xl font-semibold"><a href="/blog">Latest posts</a>
+        </h3>
+      {sortedRecentPosts.map((p) => <BlogPostPreview post={p} />)}
+    </div>
+  </div>
+</Layout>
