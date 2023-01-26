@@ -1,0 +1,35 @@
+---
+title: 'Releasing Crossywalk 🚸'
+pubDate: '2023-01-26'
+summary: "The first little project of 2023"
+layout: ../../../layouts/BlogLayout.astro
+---
+import Image from '@/components/Image.astro';
+
+## happy new year
+
+Staying true to my <a class="hover:text-indigo-800 dark:hover:text-yellow-200 no-underline" href="/blog/hello">2023 plan</a>, I shipped my first personal project of the year - and a few days ahead of schedule.
+
+<a class="hover:text-indigo-800 dark:hover:text-yellow-200" href="https://crossywalk.com" target="_blank">Crossywalk</a> is a place for everyone to suggest and vote on crosswalks they should exist. That's it 🤷
+
+
+## why this¿
+
+Apart from the - hopeful - social good that can come out of this, I was getting tired of crossing Bloor at the Longos (opposite 121) when coming out of the TTC to get to work. 
+
+I bet that everyone else who worked in that building also hated it, so why not give people a place to upvote their displeasure?
+
+<a href="https://crossywalk.com" target="_blank" rel="hudsonyuen.com">
+    <Image
+    src={import('./crossywalk-screenshot.png')}
+    alt="Screenshot of crossywalk UI"
+    />
+</a>
+
+## Tech
+- Next.js, Tailwind
+- Mapbox, Google Maps geocoding and places (wanted to learn about using maps so this was a good excuse)
+- Heroku Postgres (using my student credits for once lol)
+- Deployed on Vercel with Plausible analytics
+
+Stay tuned for more >>:)

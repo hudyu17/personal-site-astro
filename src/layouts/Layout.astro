@@ -6,6 +6,8 @@ export interface Props {
   title?: string;
   description?: string;
 }
+import { Plausible } from 'astro-analytics';
+
 
 const { title, description } = Astro.props as Props;
 
@@ -42,7 +44,7 @@ const activeStyle = 'bg-slate-100 dark:bg-neutral-800';
     <meta name="twitter:card" content="summary" />
 
     <!-- Analytics -->
-    <script defer data-domain="hudsonyuen.com" data-api="/plausible/api/event" src="/plausible/js/script.js"></script>
+    <Plausible domain="hudsonyuen.com"/>
 
     <script is:inline>
       const theme = (() => {
