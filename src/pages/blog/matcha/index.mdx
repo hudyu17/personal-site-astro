@@ -1,0 +1,41 @@
+---
+title: 'A moment for CareerMatcha 🍵'
+pubDate: '2023-03-28'
+summary: "A more ambitious project, still in progress"
+layout: ../../../layouts/BlogLayout.astro
+---
+import Image from '@/components/Image.astro';
+
+## What is it this time
+
+Once again staying true to my <a class="hover:text-indigo-800 dark:hover:text-yellow-200 no-underline" href="/blog/hello">2023 plan</a>, I shipped my second personal project of the year - slightly after my self-imposed Feb 28 deadline but I swear I got it out that week.
+
+<a class="hover:text-indigo-800 dark:hover:text-yellow-200" href="https://careermatcha.com" target="_blank">CareerMatcha</a> is a career path database and suite of tools for career inspo and decision making. At least that's the goal.
+
+
+## What I've done so far
+
+There's a waitlist (with a surprising number of people on it), and there's a private beta floating around with a small initial dataset and some other features. I'm working on a potential mentorship matching service as well, as that seems to be a popular request.
+
+
+## Why do this?
+
+Bit of a confluence of factors. I like building things, and career stuff is always on our minds - especially the under-30s crowd. 
+
+I feel like there are two main points when you start to question your life immensely: your final year of uni when you can't land a job, and a few years after grad when you realise you don't really like the job that you did land. If you made it past your 20s without feeling these, congrats!
+
+If CareerMatcha can somehow provide inspiration and guidance during these kinda-dark-but-not-that-dark days, then I'd consider that a success.
+
+<a href="https://careermatcha.com" target="_blank" rel="hudsonyuen.com">
+    <Image
+    src={import('./browse-v1.png')}
+    alt="Screenshot of CareerMatcha UI"
+    />
+</a>
+
+There's still a waitlist at the time of writing, but the main URL will eventually throw you to the actual platform.
+
+## Tech
+- Next.js, Tailwind (again)
+- PostgreSQL + Prisma
+- Deployed on Vercel with Plausible analytics
