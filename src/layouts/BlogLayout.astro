@@ -13,11 +13,13 @@ const formattedDate = format(date, 'LLLL d, yyyy');
   <div>
     <article class="prose lg:prose-lg dark:prose-invert">
       <h1>{frontmatter.title}</h1>
+      <h3 class="italic font-light">{frontmatter.summary}</h3>
       <p>Published on {formattedDate}</p>
+      
       <slot />
     </article>
     <div class="pt-12 pb-8">
-      <Newsletter />
+      <!-- <Newsletter /> -->
     </div>
   </div>
 </Layout>
