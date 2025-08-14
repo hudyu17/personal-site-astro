@@ -10,7 +10,16 @@ layout: ../layouts/Page.astro
 - <a class="hover:text-indigo-800 dark:hover:text-yellow-200" href="https://trytuuli.com" target="_blank">Tuuli</a> - The easiest way for consultants, architects, and suppliers to manage environmental material data 🏗  -->
 
 
-Some of my personal projects :^)
+- Sep 25 - present: MSc Science, Technology, Policy at ETH Zurich
+- Sep 23 - May 25: Web Developer at SideFX
+- Aug 22 - Jun 23: Co-founder of Tuuli
+- Sep 22 - Dec 22: Advisory Consultant Intern at Arup
+- May 21 - Aug 21: Associate Consultant Intern at Mastercard
+- May 20 - May 21: Data / Strategy Analyst Co-op at Kijiji
+
+--- 
+
+And some of my favourite personal projects from the past :^)
 
 - <a class="text-indigo-800 no-underline dark:text-yellow-200 hover:underline" href="https://crossywalk.com" target="_blank">Crossywalk</a> - Suggest and vote on new crosswalks 🚸 (blog post <a class="text-indigo-800 dark:text-yellow-200 no-underline hover:underline" href="/blog/crossywalk">here</a>)
 
@@ -18,14 +27,4 @@ Some of my personal projects :^)
 
 - <a class="text-indigo-800 no-underline dark:text-yellow-200 hover:underline" href="https://mlbhigherlower.vercel.app/" target="_blank">MLB Higher Lower Game</a> - A  version with baseball stats ⚾️
 
-- <a class="text-indigo-800 no-underline dark:text-yellow-200 hover:underline" href="https://theflyingmoose.net/" target="_blank">The Flying Moose</a> - YouTube channel + blog about transportation 🚄 🚋 🛫
-
---- 
-
-Professionally speaking 👔
-
-- Sep 23 - present: Web Developer at SideFX
-- Aug 22 - Jun 23: Co-founder of Tuuli
-- Sep 22 - Dec 22: Advisory Consultant Intern at Arup
-- May 21 - Aug 21: Associate Consultant Intern at Mastercard
-- May 20 - May 21: Data / Strategy Analyst Co-op at Kijiji
+<!-- - <a class="text-indigo-800 no-underline dark:text-yellow-200 hover:underline" href="https://theflyingmoose.net/" target="_blank">The Flying Moose</a> - YouTube channel + blog about transportation 🚄 🚋 🛫 -->
