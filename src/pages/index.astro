@@ -17,22 +17,13 @@ const sortedRecentPosts = allPosts
 <Layout>
   <div class="space-y-6">
     <h1 class="text-3xl font-bold md:text-5xl">Hi, I'm Hudson 👋</h1>
-    <h2 class="text-lg">I'm a software developer who loves transportation 🚄 🚋 🛫</h2>
-    <ul class="list-disc space-y-2 ml-2 list-inside">
-      <li class="text-gray-300 dark:text-gray-600">
-        <span class="text-black dark:text-white">
-        Django developer at <a
-          class="hover:underline rounded-lg dark:hover:underline text-indigo-800 dark:text-yellow-200"
-          href="https://www.sidefx.com/"
-          target="_blank"
-        >SideFX</a>
-      </span>
-      </li>
+    <h2 class="text-lg">I'm pursuing my MSc in Science, Technology, and Policy at ETH Zurich, focusing on public transportation 🚄 🚋 🛫</h2>
+    <ul class="list-disc space-y-2 ml-2 list-outside">
       <li class="text-gray-300 dark:text-gray-600">
         <span class="text-black dark:text-white">
           Creator of <a
           class="hover:underline rounded-lg dark:hover:underline text-indigo-800 dark:text-yellow-200"
-          href="https://theflyingmoose.net/"
+          href={`https://youtube.com/@${YOUTUBE}`}
           target="_blank"
         >
           The Flying Moose
@@ -42,7 +33,17 @@ const sortedRecentPosts = allPosts
       
       <li class="text-gray-300 dark:text-gray-600">
         <span class="text-black dark:text-white">
-          CS + Stats, University of Toronto (2023)
+          BSc Computer Science and Statistics, University of Toronto, 2023
+      </span>
+      </li>
+
+      <li class="text-gray-300 dark:text-gray-600">
+        <span class="text-black dark:text-white">
+        Django developer at <a
+          class="hover:underline rounded-lg dark:hover:underline text-indigo-800 dark:text-yellow-200"
+          href="https://www.sidefx.com/"
+          target="_blank"
+        >SideFX</a>, 2023-2025
       </span>
       </li>
     </ul>
@@ -61,13 +62,13 @@ const sortedRecentPosts = allPosts
       >
         <YouTube />
       </a>
-      <a
+      <!-- <a
         class="hover:bg-yellow-200 py-2 px-3 rounded-lg dark:hover:bg-neutral-800 dark:hover:text-yellow-200"
         href={`https://twitter.com/${HANDLE_TWITTER}`}
         target="_blank"
       >
         <Twitter />
-      </a>
+      </a> -->
       <a
         class="hover:bg-yellow-200 py-2 px-3 rounded-lg dark:hover:bg-neutral-800 dark:hover:text-yellow-200"
         href={`mailto:${EMAIL}`}
